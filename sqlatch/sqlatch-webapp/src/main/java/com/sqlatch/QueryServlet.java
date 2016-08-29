@@ -2,7 +2,7 @@ package com.sqlatch;
 
 import com.google.gson.Gson;
 import com.google.gson.GsonBuilder;
-import com.mycompany.databasehandler.DataBaseHandler;
+import com.sqlatch.repository.databasehandler.DataBaseHandler;
 import java.io.IOException;
 import java.io.PrintWriter;
 import java.sql.SQLException;
@@ -43,11 +43,11 @@ public class QueryServlet extends HttpServlet {
             if ( request.getParameterMap().containsKey("query")) {
                 Map params = new Hashtable<String, String>();
 
-                params.put("path","jdbc:mysql://localhost:3306/EMPRESA?zeroDate" +
+                params.put("path","jdbc:mysql://localhost:3306/sqlatch?zeroDate" +
                         "TimeBehavior=convertToNull" + 
                         "&serverTimezone=America/New_York");
-                params.put("user","student");
-                params.put("pass","student");
+                params.put("user","sqlatch");
+                params.put("pass","sqlatch");
 
                 try {
                     DataBaseHandler dbHandler = new DataBaseHandler((Hashtable<String, String>) params);

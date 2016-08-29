@@ -3,9 +3,9 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package com.mycompany.databasehandler.main;
+package com.sqlatch.repository.databasehandler.main;
 
-import com.mycompany.databasehandler.DataBaseHandler;
+import com.sqlatch.repository.databasehandler.DataBaseHandler;
 import java.sql.SQLException;
 import java.util.ArrayList;
 import java.util.Hashtable;

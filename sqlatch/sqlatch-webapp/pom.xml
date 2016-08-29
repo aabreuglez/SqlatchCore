@@ -3,11 +3,11 @@
     <modelVersion>4.0.0</modelVersion>
 
     <groupId>com.mycompany</groupId>
-    <artifactId>webapp-sqlatch</artifactId>
-    <version>1.0-SNAPSHOT</version>
+    <artifactId>sqlatch-webapp</artifactId>
+    <version>0.1</version>
     <packaging>war</packaging>
 
-    <name>webapp-sqlatch</name>
+    <name>sqlatch-webapp</name>
 
     <properties>
         <endorsed.dir>${project.build.directory}/endorsed</endorsed.dir>
@@ -17,7 +17,7 @@
     <dependencies>
         <dependency>
             <groupId>${project.groupId}</groupId>
-            <artifactId>DatabaseHandler</artifactId>
+            <artifactId>sqlatch-repository</artifactId>
             <version>${project.version}</version>
         </dependency>
         <dependency>
